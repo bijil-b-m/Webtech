@@ -1,0 +1,74 @@
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .static {
+            position: sticky;
+            top: 0;
+            right: 0;
+            display: inline;
+            float: right;
+            font-size: 25px; 
+            border-radius: 15px;
+            padding: 10px;
+            background-color: aliceblue;
+            box-shadow: 0 0 25px black;
+            animation: fadeIn 1s ease;
+        }
+        li {
+            list-style: none;
+            margin: 8px 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(50, 53, 51);
+        }
+        li:hover {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 8px;
+            color: azure;
+            border-radius: 20px;
+            background-color: rgb(37, 38, 43);
+        }
+        h1 {
+            display: inline-block;
+            padding: 5px;
+            color: darkslateblue;
+            text-shadow: 2px 1px 2px rgb(120, 127, 131);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="static">
+        <a href="register.html">For Admission Click Here</a>
+    </div>
+    <h1>Admissions Open</h1>
+    <ul>
+        <a href="register.html"><li>School of Engineering</li></a>
+        <a href="register.html"><li>School of Law</li></a>
+        <a href="register.html"><li>School of Management</li></a>
+        <a href="register.html"><li>School of Commerce</li></a>
+        <a href="register.html"><li>School of Design</li></a>
+    </ul>
+</body>
+</html>

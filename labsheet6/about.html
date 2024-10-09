@@ -1,0 +1,81 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            color: #03e9f4;
+            animation: fadeIn 1s ease;
+        }
+        p {
+            font-size: 18px;
+            color: #dcdcdc;
+            animation: slideIn 1s ease;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            animation: zoomIn 1s ease;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Overview</h1>
+    <p><b>About the University:</b></p>
+    <p>Established in 2013, Presidency University is a prestigious institution dedicated to providing high-quality education and fostering research innovation.</p>
+    <p>With a diverse array of programs and a commitment to excellence, we empower students to achieve their academic and professional goals.</p>
+    <p>Our campus is equipped with state-of-the-art facilities, promoting a vibrant and collaborative learning environment.</p>
+    <img src="images/pu.jpg" alt="images/pu">
+    <img src="images/pu01.jpg" alt="images/pu01">
+    <img src="images/pu02.jpg" alt="images/pu02">
+    <img src="images/pu03.jpg" alt="images/pu03">
+</body>
+</html>
